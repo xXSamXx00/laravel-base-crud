@@ -16,13 +16,15 @@
 
 <body>
     @include('partials.header')
+    <!-- Site Header -->
 
     <main id="site_main">
         @yield('content')
     </main>
+    <!-- Site Main -->
 
     @include('partials.footer')
-
+    <!-- Site Footer -->
 </body>
 
 </html>
