@@ -19,8 +19,13 @@ body {
             margin: 0;
             font-weight: 500;
             font-size: 12px;
-            &:first-child {
-                margin-right: 50px;
+            margin-left: 50px;
+            a {
+                text-decoration: none;
+                color: white;
+                &:hover {
+                    color: lightblue;
+                }
             }
             span {
                 font-size: 20px;
@@ -101,6 +106,25 @@ body {
 
 #site_main {
     background-color: #1c1c1c;
+    #admin_comics {
+        color: white;
+        .container {
+            .table {
+                margin: 0;
+                color: white;
+            }
+            .pagination {
+                justify-content: flex-end;
+                margin-top: 50px;
+            }
+        }
+    }
+    #create_comics {
+        color: white;
+        h1 {
+            margin: 0;
+        }
+    }
     .home {
         h1 {
             text-align: center;

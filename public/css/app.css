@@ -11262,9 +11262,14 @@ body {
   margin: 0;
   font-weight: 500;
   font-size: 12px;
+  margin-left: 50px;
 }
-#site_header .little_header p:first-child {
-  margin-right: 50px;
+#site_header .little_header p a {
+  text-decoration: none;
+  color: white;
+}
+#site_header .little_header p a:hover {
+  color: lightblue;
 }
 #site_header .little_header p span {
   font-size: 20px;
@@ -11350,6 +11355,23 @@ body {
 
 #site_main {
   background-color: #1c1c1c;
+}
+#site_main #admin_comics {
+  color: white;
+}
+#site_main #admin_comics .container .table {
+  margin: 0;
+  color: white;
+}
+#site_main #admin_comics .container .pagination {
+  justify-content: flex-end;
+  margin-top: 50px;
+}
+#site_main #create_comics {
+  color: white;
+}
+#site_main #create_comics h1 {
+  margin: 0;
 }
 #site_main .home h1 {
   text-align: center;

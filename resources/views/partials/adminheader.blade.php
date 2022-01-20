@@ -1,7 +1,6 @@
 <header id="site_header">
     <div class="little_header">
         <div class="container d-flex justify-content-end align-items-center">
-            <p><a href="{{ route('admin.comics.index') }}">Sezione Admin</a></p>
             <p>Dc power&trade; visa&reg; </p>
             <p>Additional dc sites<span>&dtrif;</span></p>
         </div>
@@ -22,5 +21,4 @@
             </div>
         </div>
     </nav>
-    <div class="hero_image"></div>
 </header>
