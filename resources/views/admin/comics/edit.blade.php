@@ -10,6 +10,14 @@
             @csrf
             @method('PUT')
             <div class="mb-3">
+                <label for="title" class="form-label">Titolo</label>
+                <input type="text" name="title" id="title" class="form-control @error('title') is-invalid @enderror" placeholder="Scrivi il titolo" aria-describedby="titleHelper" value="{{ $comic->title }}">
+                <small id="titleHelper" class="text-muted">Scrivi un titolo, max 255 caratteri</small>
+                @error('title')
+                <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
+            </div>
+            <div class="mb-3">
                 <label for="description" class="form-label">Descrizione</label>
                 <textarea placeholder="Inserisci la descrizione" class="form-control @error('description') is-invalid @enderror" name="description" id="description" rows="5">{{ $comic->description }}</textarea>
                 @error('description')
@@ -56,7 +64,7 @@
                 @enderror
             </div>
             <div class="text-center pb-5">
-                <button type="submit" class="btn btn-success w-25">Salva</button>
+                <button type="submit" class="btn btn-success w-25">Aggiorna</button>
             </div>
         </form>
     </div>

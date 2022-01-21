@@ -9,7 +9,7 @@
         <form action="{{ route('admin.comics.store') }}" method="post">
             @csrf
             <div class="mb-3">
-                <label for="title" class="form-label">Title</label>
+                <label for="title" class="form-label">Titolo</label>
                 <input type="text" name="title" id="title" class="form-control @error('title') is-invalid @enderror" placeholder="Scrivi il titolo" aria-describedby="titleHelper" value="{{ old('title') }}">
                 <small id="titleHelper" class="text-muted">Scrivi un titolo, max 255 caratteri</small>
                 @error('title')
