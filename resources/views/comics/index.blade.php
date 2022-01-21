@@ -9,7 +9,7 @@
     <div class="series row">
         @foreach($comics as $comic)
         <div class="col-2">
-            <a href="{{ route('comic', ['comic' => $comic->id]) }}">
+            <a href="{{ route('comic', $comic->id) }}">
                 <div class="card_comics">
                     <img src="{{ $comic['thumb'] }}" alt="Comics">
                     <h3>{{ $comic->series }}</h3>

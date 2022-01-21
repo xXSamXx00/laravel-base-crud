@@ -41,7 +41,7 @@ class CreatecomicController extends Controller
         $validate_data = $request->validate([
             'title' => 'required|unique:comics',
             'description' => 'required',
-            'thumb' => 'required',
+            'thumb' => 'required|url',
             'price' => 'nullable',
             'series' => 'nullable',
             'sale_date' => 'nullable',
@@ -85,14 +85,17 @@ class CreatecomicController extends Controller
     public function update(Request $request, Comic $comic)
     {
         $validate_data = $request->validate([
-            'title' => 'required|unique:comics',
-            'description' => 'nullable',
-            'thumb' => 'nullable',
+            'description' => 'required',
+            'thumb' => 'required|url',
             'price' => 'nullable',
             'series' => 'nullable',
             'sale_date' => 'nullable',
             'type' => 'nullable'
         ]);
+
+        $comic->update($validate_data);
+
+        return redirect()->route('admin.comics.index')->with('message', 'Hai modificato il Comic ' . $comic->title . ' correttamente');
     }
 
     /**
@@ -103,6 +106,8 @@ class CreatecomicController extends Controller
      */
     public function destroy(Comic $comic)
     {
-        //
+        $comic->delete();
+
+        return redirect()->route('admin.comics.index')->with('message', 'Hai cancellato il Comic ' . $comic->title . ' correttamente');
     }
 }

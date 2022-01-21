@@ -11367,6 +11367,9 @@ body {
   justify-content: flex-end;
   margin-top: 50px;
 }
+#site_main #admin_comics .container .modal {
+  color: black;
+}
 #site_main #create_comics {
   color: white;
 }
