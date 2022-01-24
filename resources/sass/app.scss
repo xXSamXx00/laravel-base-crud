@@ -218,6 +218,17 @@ body {
             }
         }
     }
+    .cover {
+        position: absolute;
+        top: 155px;
+        width: 100%;
+        img {
+            height: 400px;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
     .single_comic {
         &.mt-admin {
             margin-top: 240px;

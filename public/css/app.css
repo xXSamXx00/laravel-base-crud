@@ -11466,6 +11466,19 @@ body {
   font-size: 15px;
   margin-left: 10px;
 }
+#site_main .cover {
+  position: absolute;
+  top: 155px;
+  width: 100%;
+}
+#site_main .cover img {
+  height: 400px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
 #site_main .single_comic.mt-admin {
   margin-top: 240px;
 }

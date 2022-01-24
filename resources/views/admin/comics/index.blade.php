@@ -39,7 +39,7 @@
                         </button>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="delete{{ $comic->id }}" tabindex="-1" role="dialog" aria-labelledby="modal-{{ $comic->idate }}" aria-hidden="true">
+                        <div class="modal fade" id="delete{{ $comic->id }}" tabindex="-1" role="dialog" aria-labelledby="modal-{{ $comic->id }}" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
