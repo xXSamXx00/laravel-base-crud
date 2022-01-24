@@ -11356,6 +11356,13 @@ body {
 #site_main {
   background-color: #1c1c1c;
 }
+#site_main #home_admin {
+  color: white;
+}
+#site_main #home_admin h3 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
 #site_main #admin_comics {
   color: white;
 }
@@ -11458,6 +11465,9 @@ body {
   font-weight: 400;
   font-size: 15px;
   margin-left: 10px;
+}
+#site_main .single_comic.mt-admin {
+  margin-top: 240px;
 }
 #site_main .single_comic .px_container {
   padding: 0 150px;

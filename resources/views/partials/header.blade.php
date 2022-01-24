@@ -1,7 +1,7 @@
 <header id="site_header">
     <div class="little_header">
         <div class="container d-flex justify-content-end align-items-center">
-            <p><a href="{{ route('admin.comics.index') }}">Sezione Admin</a></p>
+            <p><a href="{{ route('admin.home') }}">Sezione Admin</a></p>
             <p>Dc power&trade; visa&reg; </p>
             <p>Additional dc sites<span>&dtrif;</span></p>
         </div>
@@ -15,6 +15,7 @@
             </div>
             <ul>
                 <li><a class="{{ Route::currentRouteName() === 'comics' ? 'active' : ''}}" href="{{ route('comics') }}">Comics</a></li>
+                <li><a class="{{ Route::currentRouteName() === 'movies' ? 'active' : ''}}" href="{{ route('movies') }}">Movies</a></li>
             </ul>
             <div class="search">
                 <input type="search" placeholder="Search">

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Comic;
+use App\Models\Movie;
 use Illuminate\Http\Request;
 
-class ComicController extends Controller
+class MovieController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,19 +14,19 @@ class ComicController extends Controller
      */
     public function index()
     {
-        $comics = Comic::all();
+        $movies = Movie::all();
 
-        return view('comics.index', compact('comics'));
+        return view('movies.index', compact('movies'));
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Comic  $comic
+     * @param  \App\Models\Movie  $movie
      * @return \Illuminate\Http\Response
      */
-    public function show(Comic $comic)
+    public function show(Movie $movie)
     {
-        return view('comics.show', compact('comic'));
+        return view('movies.show', compact('movie'));
     }
 }

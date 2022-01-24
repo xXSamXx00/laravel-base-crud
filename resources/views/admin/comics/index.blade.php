@@ -31,7 +31,7 @@
                     <td>{{ $comic->created_at }}</td>
                     <td>{{ $comic->updated_at }}</td>
                     <td>
-                        <a class="btn btn-primary" href="{{ route('comic', $comic->id) }}"><i class="fas fa-eye"></i></a>
+                        <a class="btn btn-primary" href="{{ route('admin.comics.show', $comic->id) }}"><i class="fas fa-eye"></i></a>
                         <a class="btn btn-secondary" href="{{ route('admin.comics.edit', $comic->id) }}"><i class="fas fa-pencil-alt"></i></a>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete{{ $comic->id }}">
