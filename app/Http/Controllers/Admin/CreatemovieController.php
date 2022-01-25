@@ -16,7 +16,7 @@ class CreatemovieController extends Controller
      */
     public function index()
     {
-        $movies = Movie::paginate(5);
+        $movies = Movie::orderBy('id', 'desc')->paginate(5);
 
         return view('admin.movies.index', compact('movies'));
     }
